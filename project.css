@@ -63,7 +63,7 @@ img{width: 100%;margin: auto;}
     nav ul a:hover{box-shadow: none;}
 nav ul ul li a:hover{color: white;background-color: tomato;}
 
-    .icon{display: block;color: #020202;position:absolute;right: 40px;cursor: pointer;font-size: 24px;}
+    .icon{display: block;color: #020202;position:absolute;right: 30px;cursor: pointer;font-size: 24px;}
     .show + a, ul{display: none;}
     [id^=btn]:checked + ul{display: block;}
     nav ul ul a{padding-left: 16px;}

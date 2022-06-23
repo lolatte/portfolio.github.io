@@ -24,7 +24,7 @@ footer{padding: 16px;}
 header{margin: 24px;}
 section li{font-size: 13px;line-height: 1.4rem;}
 
-.menu p a{text-decoration: none;background-color: #020202;color: #ffffff;}
+.menu p a{text-decoration: none;background-color: #020202;color: #edd94c;}
 .menu p a:hover{background-color: inherit;color: #020202;text-decoration: underline;}
       section{margin-left: 16px;margin-right: 16px;}
       article{margin-left: 16px;margin-right: 16px;}

@@ -37,7 +37,7 @@ button {display: block;position: fixed;bottom: 20px;right: 30px;z-index: 99;font
 button:hover {background-color:#edd94c;}
 
 
-@media (max-width:840px){
+@media (max-width:840px){nav ul ul li a:hover{color:#020202;background-color: #edd94c;}
     nav ul{margin-right: 0px;float: left;background-color: #f9f9f9;padding: 16px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
     nav ul ul{background-color:#f9f9f9;box-shadow: none;}
     nav .logo{padding-left: 24px;width: 100%;}

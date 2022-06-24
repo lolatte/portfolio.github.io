@@ -12,7 +12,7 @@ nav ul ul li a:hover{color:#020202;background-color: #edd94c;}
 .show, .icon, input{display: none;}
 
 body{background-color:#fffff7;color: #020202;font-size: 14px; font-family: 'Montserrat', sans-serif;font-weight: 400;word-wrap: normal;}
-.gridcon{display: grid;gap: 2rem;}
+.gridcon{display: grid;gap: 2rem; grid-template-columns: 1fr 1fr 1fr 1fr;}
 .header p a{text-decoration: none;color: #020202;}
 h1{font-size: 39.81px;line-height: 3.8rem;word-wrap: normal;font-family: 'Eb Garamond', serif;font-weight: 400;}
 h3{font-size: 33.18px; line-height: 2.6rem;font-family: 'Eb Garamond', serif;font-weight: 400;}

@@ -4,11 +4,12 @@ ul li a, ul ul li a{color: #020202;}
 nav ul{float: right;list-style: none;margin-right: 40px;position: relative;}
 nav ul li{display: inline-block;margin: 0 5px;}
 nav ul li a{text-decoration: none;padding: 8px 16px;}
+nav ul li a:hover{color:#b6b6b6;}
 nav ul ul{position: absolute;opacity: 0;visibility: hidden;transition: top .3s;background-color: #f9f9f9;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
 nav ul ul li{position: relative;margin: 0px;min-width: 160px;float: none;display:list-item;padding: 8px;}
 nav .logo{float: left;padding-left: 16px;}
 nav ul li:hover> ul {opacity: 1;visibility: visible;}
-nav ul ul li a:hover{color: #020202;background-color: # edd94c;}
+nav ul ul li a:hover{color: #020202;background-color: #edd94c;}
 .show, .icon, input{display: none;}
 #current{color:#edd94c;}
 
@@ -108,7 +109,9 @@ h5{font-size: 33.18px; line-height: 2.6rem;font-family: 'Eb Garamond', serif;fon
     h6{font-size: 23.04px;line-height: 2.2rem;font-weight: 400;}
     footer{padding: 24px;}
 section li{font-size: 14px;line-height: 1.4rem;}
-    
+          
+    nav ul ul li a:hover{color: #020202;background-color: #edd94c;}
+          
         .gridcon{display: grid;gap: 2rem; grid-template-areas: 'nav nav nav nav'
         'header header header header'
     'aside aside right right'

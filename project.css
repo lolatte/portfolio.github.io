@@ -34,8 +34,8 @@ section li{font-size: 13px;line-height: 1.4rem;}
 .contact-info a{margin-right: 16px;color:#f5f5f5;text-decoration: overline;}
 .contact-info a:hover{font-size: 19.02px; text-decoration: underline;}
 footer{background-color: #020202;color: #f5f5f5;}
-.menu{padding: 32px;}
-.aside{padding: 32px;}
+.menu{padding: 16px;}
+.aside{padding: 16px;}
 .gridcon{display: grid;gap: 1rem;}
 .footer{background-color: black;}
 figcaption{text-align: center;}

@@ -1,0 +1,134 @@
+*{box-sizing: border-box;}
+nav:after {content: '';clear: both;display: table;}
+ul li a, ul ul li a{color: #020202;}
+nav ul{float: right;list-style: none;margin-right: 40px;position: relative;}
+nav ul li{display: inline-block;margin: 0 5px;}
+nav ul li a{text-decoration: none;padding: 8px 16px;}
+nav ul li a:hover{color:#b6b6b6;}
+nav ul ul{position: absolute;opacity: 0;visibility: hidden;transition: top .3s;background-color: #fcfcfc;z-index: 1;}
+nav ul ul li{position: relative;margin: 0px;min-width: 160px;float: none;display:list-item;padding: 8px;}
+nav .logo{float: left;padding-left: 16px;}
+nav ul li:hover> ul {opacity: 1;visibility: visible;}
+nav ul ul li a:hover{color: #020202;background-color: #edd94c;}
+.show, .icon, input{display: none;}
+#current{color:#edd94c;}
+
+button {display: block;position: fixed;bottom: 20px;right: 30px;z-index: 99;font-size: 18px;border: none;outline: none;background-color:white;cursor: pointer;border-radius: 4px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);width: 32px;height: 32px;}
+button:hover {background-color:#edd94c; }
+
+body{background-color:#fcfcfc;color: #020202;font-size: 14px;font-family: 'Montserrat', sans-serif;word-wrap: normal;line-height:1.6rem;}
+h1{font-size: 39.81px;line-height: 3.8rem;word-wrap: normal; font-family: 'Eb Garamond', serif;font-weight: 400;}
+h3{font-size: 33.18px; line-height: 2.6rem;font-family: 'Eb Garamond', serif;font-weight: 400;}
+h5{font-size: 19.02px; line-height: 2.6rem;font-family: 'Eb Garamond', serif;font-weight: 400;}
+h6{font-size: 16px; line-height: 1.2rem;font-weight: 400;}
+footer{padding: 16px;}
+header{margin: 24px;}
+section li{font-size: 13px;line-height: 1.4rem;}
+
+.menu p a{text-decoration: none;background-color: #edd94c;color: #020202;}
+.menu p a:hover{background-color: inherit;color: #020202;text-decoration: underline;}
+      section{margin-left: 16px;margin-right: 16px;}
+      article{margin-left: 16px;margin-right: 16px;}
+
+.contact-info{margin-top: 56px;align-items: center;margin-bottom: 56px;}
+.contact-info a{margin-right: 16px;color:#f5f5f5;text-decoration: overline;}
+.contact-info a:hover{font-size: 19.02px; text-decoration: underline;}
+footer{background-color: #020202;color: #f5f5f5;}
+.menu{padding: 16px;}
+.aside{padding: 16px;}
+.gridcon{display: grid;gap: 1rem;}
+.footer{background-color: black;}
+figcaption{text-align: center;}
+img{width: 100%;margin: auto;}
+
+.easeOut {animation: 2s anim-lineUp ease-out;}
+@keyframes anim-lineUp {
+0% {opacity: 0;transform: translateY(80%);}
+  20% {opacity: 0;}
+  50% {opacity: 1;transform: translateY(0%);}
+  100% {opacity: 1;transform: translateY(0%);}
+}
+
+@media (max-width:840px){
+    nav .logo{padding-left: 24px;width: 100%;}
+    nav ul{margin-right: 0px;float: left;background-color: #fcfcfc;padding: 16px;
+    }
+    nav ul ul{background-color: inherit;box-shadow: none;}
+    nav ul, nav ul ul{width: 100%;}
+    nav ul li, nav ul ul li{display: block;width: 100%;padding: 8px;}
+    nav ul ul{top: 70px;position: static;float: none;display: none;opacity: 1;visibility: visible;}
+    .show{display: block;cursor: pointer;padding: 0 16px;}
+    nav ul li a:hover{color: #b6b6b6;} 
+    nav ul ul li a:hover{color: #b6b6b6;}
+     .show:hover{color: #b6b6b6;}
+    nav ul a:hover{box-shadow: none;}
+nav ul ul li a:hover{color: #020202;background-color: #edd94c;}
+
+    .icon{display: block;color: #020202;position:absolute;right: 30px;cursor: pointer;font-size: 24px;}
+    .show + a, ul{display: none;}
+    [id^=btn]:checked + ul{display: block;}
+    nav ul ul a{padding-left: 16px;}
+
+}
+@media(min-width:720px){
+    h1{font-size: 57.33px;line-height: 4.6rem;}
+h3{font-size: 39.81px; line-height: 3.8rem; font-family: 'Eb Garamond', serif;font-weight: 400;}
+    h5{font-size: 33.18px; line-height: 2.6rem;font-family: 'Eb Garamond', serif;font-weight: 400;}
+    h6{font-size: 19.02px;line-height: 1.8rem;font-weight: 400;}
+section li{font-size: 14px;line-height: 1.6rem;}
+    
+button {display: block;position: fixed;bottom: 20px;right: 30px;z-index: 99;font-size: 18px;border: none;outline: none;background-color:white;cursor: pointer;border-radius: 4px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);width: 40px;height: 40px;}
+button:hover {background-color:#edd94c;}
+
+        .gridcon{display: grid;gap: 1rem; grid-template-areas: 'nav nav' 'header header'
+    'right aside'
+    'main main'
+    'footer footer'; grid-template-columns: 1fr 1fr 1fr 1fr;}
+    footer{padding: 24px;}
+    body{font-size: 16px;line-height: 1.8rem;}
+            section p a:hover{color: #020202;background-color: inherit;text-decoration: underline;font-weight: 600;}
+    .contact a:hover{font-size: 23.04px; text-decoration: underline;}
+    
+    .header{grid-column-start: 1;grid-column-end: 6;}
+    .title{grid-column-start: 1;grid-column-end: 6;}
+    .menu{grid-column-start: 1;grid-column-end: 3;}
+    .aside{grid-column-start: 3;grid-column-end: 6;}
+    .main{grid-column-start: 1;grid-column-end: 6;}
+    .footer{grid-column-start: 1;grid-column-end: 6;}
+    header{margin: 24px;}
+article{margin-left: 24px;margin-right: 24px;}
+    
+    }
+    
+    
+    
+    @media(min-width:1200px){
+    h1{font-size: 68.80px;line-height: 5.6rem;}
+h3{font-size: 47.78px; line-height: 3.8rem;}
+h5{font-size: 33.18px; line-height: 2.6rem;font-family: 'Eb Garamond', serif;font-weight: 400;}
+    h6{font-size: 23.04px;line-height: 2.2rem;font-weight: 400;}
+    footer{padding: 24px;}
+section li{font-size: 14px;line-height: 1.4rem;}
+          
+    nav ul ul li a:hover{color: #020202;background-color: #edd94c;}
+          
+        .gridcon{display: grid;gap: 2rem; grid-template-areas: 'nav nav nav nav'
+        'header header header header'
+    'aside aside right right'
+    'main main main main'
+    'footer footer footer footer'; grid-template-columns: 1fr 1fr 1fr 1fr;} 
+    
+    body{font-size: 16px;line-height: 1.8rem;}
+    section p a:hover{color: #020202;background-color: inherit;text-decoration: underline;}
+    .contact a:hover{font-size: 23.04px; text-decoration: underline;}
+    
+    .header{grid-column-start: 1;grid-column-end: 6;}
+    .title{grid-column-start: 1;grid-column-end: 6;}
+    .menu{grid-column-start: 1;grid-column-end: 3;}
+    .aside{grid-column-start: 3;grid-column-end: 6;}
+    .main{grid-column-start: 1;grid-column-end: 6;}
+    .footer{grid-column-start: 1;grid-column-end: 6;}
+    header{margin: 32px;}
+                section{margin-left: 32px;margin-right: 32px;}
+                article{margin-left: 32px;margin-right: 32px;}
+    }

@@ -5,7 +5,7 @@ nav ul{float: right;list-style: none;margin-right: 40px;position: relative;}
 nav ul li{display: inline-block;margin: 0 5px;}
 nav ul li a{text-decoration: none;padding: 8px 16px;}
 nav ul li a:hover{color:#b6b6b6;}
-nav ul ul{position: absolute;opacity: 0;visibility: hidden;transition: top .3s;background-color: #fcfcfc;z-index: 1;}
+nav ul ul{position: absolute;opacity: 0;visibility: hidden;transition: top .3s;background-color: #fcfcfc;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
 nav ul ul li{position: relative;margin: 0px;min-width: 160px;float: none;display:list-item;padding: 8px;}
 nav .logo{float: left;padding-left: 16px;}
 nav ul li:hover> ul {opacity: 1;visibility: visible;}
